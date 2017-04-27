@@ -36,10 +36,9 @@ public class FirstActivity extends AppCompatActivity {
 
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                String selectedFood = al.get(position);
-
+                String selectedYear = al.get(position);
                 Intent intent = new Intent( getBaseContext(), SecondActivity.class);
-                intent.putExtra("title",selectedFood.toString());
+                intent.putExtra("year",selectedYear.toString());
 
                 startActivity(intent);
 
